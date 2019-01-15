@@ -48,8 +48,8 @@ wallet's balance:
     const nahmii = require('nahmii-sdk');
     const provider = new nahmii.NahmiiProvider(nahmii_base_url, nahmii_app_id, nahmii_app_secret);
 
-    // Logs all assets of the specified wallet to the console
-    provider.getNahmiiBalances(wallet_address).then(console.log);
+    // Logs all avaliable assets of the specified wallet to the console
+    provider.getAvaliableBalances(wallet_address).then(console.log);
 
 ```
 

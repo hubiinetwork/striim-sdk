@@ -32,6 +32,10 @@ s, r in hex string form, and v a number</p>
 <dd><p>Checks whether or not the address is the address of the private key used to
 sign the specified message and signature.</p>
 </dd>
+<dt><a href="#sumBalances">sumBalances(...balances)</a> ⇒ <code>Object</code></dt>
+<dd><p>Returns a single balance representing the sum of all balances passed
+to the function.</p>
+</dd>
 </dl>
 
 <a name="module_nahmii-sdk/utils"></a>
@@ -129,3 +133,29 @@ sign the specified message and signature.
 | signature | <code>Object</code> | The signature of the message given as V, R and S properties |
 | address | <code>String</code> | A hexadecimal representation of the address to verify |
 
+
+<a name="sumBalances"></a>
+
+## sumBalances(...balances) ⇒ <code>Object</code>
+Returns a single balance representing the sum of all balances passed
+to the function.
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - A single balance
+
+| Param | Type | Description |
+| --- | --- | --- |
+| balances | <code>...Object</code> | Any amount of balances
+
+**Example**  
+```js
+const bal1 = {
+  ETH: '5'
+}
+const bal2 = {
+  ETH: '5',
+  HBT: '5'
+}
+console.log(sumBalances(bal1, bal2));
+// { ETH: '10', HBT: '5' }
+```

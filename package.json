@@ -55,7 +55,9 @@
     "sinon-chai": "^3.2.0"
   },
   "dependencies": {
+    "bignumber.js": "^7.2.1",
     "ethereumjs-util": "^5.2.0",
+    "jsdoc-to-markdown": "^4.0.1",
     "ethers": "4.0.18",
     "keythereum": "^1.0.4",
     "lodash.get": "^4.4.2",

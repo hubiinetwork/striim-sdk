@@ -62,11 +62,28 @@ information and logic such as the private key, otherwise undefined
 **Returns**: <code>ethers.SignerKey</code> \| <code>undefined</code> - The private key or undefined  
 <a name="module_nahmii-sdk--Wallet+getNahmiiBalance"></a>
 
-#### wallet.getNahmiiBalance() ⇒ <code>Promise</code>
-Retrieves nahmii balance for current wallet.
+#### wallet.getAvaliableBalances() ⇒ <code>Promise</code>
+Retrieves the avaliable nahmii balance for current wallet.
 
 **Kind**: instance method of [<code>Wallet</code>](#exp_module_nahmii-sdk--Wallet)  
 **Returns**: <code>Promise</code> - A promise that resolves into a mapping from symbol to human readable amount.  
+
+<a name="module_nahmii-sdk--Wallet+getStagingBalances"></a>
+
+#### wallet.getStagingBalances() ⇒ <code>Promise</code>
+Retrieves all balances locked up in the process of staging for the wallet.
+
+**Kind**: instance method of [<code>Wallet</code>](#exp_module_nahmii-sdk--Wallet)  
+**Returns**: <code>Promise</code> - A promise that resolves into a mapping from symbol to human readable amount.  
+
+<a name="module_nahmii-sdk--Wallet+getStagedBalances"></a>
+
+#### wallet.getStagedBalances() ⇒ <code>Promise</code>
+Retrieves all staged balances for current wallet.
+
+**Kind**: instance method of [<code>Wallet</code>](#exp_module_nahmii-sdk--Wallet)  
+**Returns**: <code>Promise</code> - A promise that resolves into a mapping from symbol to human readable amount.  
+
 <a name="module_nahmii-sdk--Wallet+depositEth"></a>
 
 #### wallet.depositEth(amountEth, [options]) ⇒ <code>Promise</code>
